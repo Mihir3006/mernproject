@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <!-- main header -->
+    <div class="container_fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="form">
+                    <div class="left">
+                        <img src="image/register.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h2>Registration Form</h2>
+                        <form action="/register" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input autofocus="false" type="text" placeholder="First Name" value="" name="firstname"/>
+                                    <input autofocus="false" type="email" placeholder="Your Email" value="" name="email"/>
+                                    <input autofocus="false" type="text" placeholder="Enter Your Age" value="" name="age"/>
+                                    <input autofocus="false" type="password" placeholder="Enter Password" value="" name="password"/>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input autofocus="false" type="text" placeholder="Last Name" value="" name="lastname"/>
+                                    <input autofocus="false" type="text" minlength="10" maxlength="10" placeholder="your Phone Number"value="" name="phone"/>
+                                        <div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline">
+                                                    <input type="radio" name="gender" value="male" checked>
+                                                    <span>Male</span>
+                                                </label>
+                                                <label class="radio inline">
+                                                    <input type="radio" name="gender" value="female">
+                                                    <span>Female</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <input autofocus="false" type="password" placeholder="Confirm password" value="" name="confirmpassword">
+                                    <button type="submit" value="Register">Register</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>

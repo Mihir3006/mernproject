@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <!-- main header -->
+    <div class="container_fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="form">
+                    <div class="left">
+                        <img src="image/login.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h2>Sign-In form</h2>
+                        <form action="/login" method="POST">
+                                    <input autofocus="false" type="email" placeholder="Your Email" value="" name="email"/></br>
+                                    <input autofocus="false" type="password" placeholder="Enter Password" value="" name="password"/></br>
+                                    <button type="submit" class="btn btn-lg btn-primary btn block" style="margin-top: 10px; ;">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>
